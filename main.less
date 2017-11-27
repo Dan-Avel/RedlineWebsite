@@ -1,0 +1,178 @@
+@import "variables.less";
+
+* {
+	font-family: @font;
+}
+
+// mixins
+.col {
+	margin: 0px;
+	padding: 0px;
+	min-height: 10px;
+	max-width: 100%;
+}
+
+// template
+html {
+	padding: 0px;
+	margin: 0px;
+	body {
+		padding: 0px;
+		margin: 0px;
+		.clear-body {
+			// overflow: none;
+			background-image: url("imgs/background.jpg");
+			background-repeat: repeat;
+			.header-blue {
+				color: @blue-1;
+			}
+			.header-blue-alt {
+				color: @blue-2;
+			}
+			.header-red {
+				color: @red-1;
+			}
+			.header-red-alt {
+				color: @red-2;
+			}
+			.header-mint {
+				color: @mint;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				text-align: center;
+				margin: 0px;
+				padding: 8px;
+			}
+
+			.body-blue {
+				border: @line solid @blue-2;
+				color: @blue-2;
+				border-left: none;
+				border-right: none;
+			}
+
+			.body-red {
+				border: @line solid @red-2;
+				color: @red-2;
+				border-left: none;
+				border-right: none;
+			}
+			p {
+				margin-left: 30%;
+				max-width: 40%;
+				text-align: justify;
+				padding: @padding;
+				background-color: rgba(255,255,255,0.7);
+				display: inline-block;
+				font-size: @font-size-body
+			}
+
+			button {
+				color: white;
+				padding: @padding;
+				border: none;
+				border-left: @line solid white;
+				border-right: @line solid white;
+				margin: @margin;
+				font-size: @font-size-btn;
+			}
+			.btn-mint {
+				background-color: rgba(0, 240, 149, 0.5);
+				&:hover {
+					background-color: rgba(0, 240, 149, 1);
+				}
+			}
+			.btn-red {
+				background-color: rgba(242, 66, 60, 0.5);
+				&:hover {
+					background-color: rgba(242, 66, 60, 1);
+				}
+			}
+			.btn-blue {
+				background-color: rgba(0, 156, 189, 0.5);
+				&:hover {
+					background-color: rgba(0, 156, 189, 1);
+				}
+			}
+
+			a {
+				color: @mint;
+			}
+		}
+		.solid-body {
+			background-color: @blue-2;
+			height: 100vh;
+			// overflow: none;
+			color: white;
+			.header-blue {
+				color: @blue-1;
+			}
+			.header-blue-alt {
+				color: @blue-2;
+			}
+			.header-red {
+				color: @red-1;
+			}
+			.header-red-alt {
+				color: @red-2;
+			}
+			.header-mint {
+				color: @mint;
+			}
+			.header-white {
+				color: white;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				text-align: center;
+			}
+
+			.body {
+				color: white;
+			}
+
+			p {
+				margin-left: 30%;
+				max-width: 40%;
+				text-align: justify;
+				padding: @padding;
+				display: inline-block;
+				font-size: @font-size-body*1.15;
+				line-height: @font-size-body*2;
+			}
+
+			button {
+				color: white;
+				padding: @padding;
+				border: none;
+				border-left: @line solid white;
+				border-right: @line solid white;
+				margin: @margin;
+				font-size: @font-size-body*1.15;
+			}
+			.btn-mint {
+				background-color: rgba(0, 240, 149, 0.5);
+				&:hover {
+					background-color: rgba(0, 240, 149, 1);
+				}
+			}
+			.btn-red {
+				background-color: rgba(242, 66, 60, 0.5);
+				&:hover {
+					background-color: rgba(242, 66, 60, 1);
+				}
+			}
+			.btn-blue {
+				background-color: rgba(0, 156, 189, 0.5);
+				&:hover {
+					background-color: rgba(0, 156, 189, 1);
+				}
+			}
+
+			a {
+				font-size: @font-size-body*1.15;
+				line-height: @font-size-body*2;
+				color: @mint;
+			}
+		}
+	}
+}
